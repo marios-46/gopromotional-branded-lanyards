@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GoPromotional: Making Branded Lanyards Work</title>
+  <meta name="description" content="Discover how GoPromotional branded lanyards can support event visibility, workplace identity, staff organisation and practical brand promotion.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="keywords" content="GoPromotional branded lanyards, branded lanyards, promotional lanyards, custom lanyards, event lanyards, branded merchandise">
+
+  <style>
+    :root{
+      --charcoal:#202124;
+      --ink:#292b31;
+      --purple:#6b4ce6;
+      --violet:#8b73f2;
+      --yellow:#f4d35e;
+      --cream:#fffaf0;
+      --soft:#f3efff;
+      --rose:#f6d9df;
+      --green:#d9eadf;
+      --white:#ffffff;
+      --muted:#73757d;
+      --border:#e8e3dc;
+      --shadow:0 22px 60px rgba(32,33,36,.10);
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:Inter,Arial,Helvetica,sans-serif;
+      background:var(--cream);
+      color:var(--ink);
+      line-height:1.78;
+    }
+
+    a{
+      color:inherit;
+    }
+
+    .page{
+      overflow:hidden;
+    }
+
+    /* HERO */
+    .hero{
+      min-height:640px;
+      background:var(--charcoal);
+      color:white;
+      position:relative;
+      display:flex;
+      align-items:center;
+      padding:85px 20px 130px;
+    }
+
+    .hero-grid{
+      position:absolute;
+      inset:0;
+      opacity:.12;
+      background-image:
+        linear-gradient(rgba(255,255,255,.4) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.4) 1px,transparent 1px);
+      background-size:55px 55px;
+    }
+
+    .hero-orb{
+      position:absolute;
+      width:430px;
+      height:430px;
+      border-radius:50%;
+      background:var(--purple);
+      right:-130px;
+      top:-130px;
+      box-shadow:
+        0 0 0 70px rgba(107,76,230,.12),
+        0 0 0 140px rgba(107,76,230,.07);
+    }
+
+    .hero-inner{
+      width:min(1120px,100%);
+      margin:auto;
+      position:relative;
+      z-index:2;
+    }
+
+    .label{
+      display:inline-block;
+      padding:8px 15px;
+      border:1px solid rgba(255,255,255,.2);
+      border-radius:4px;
+      color:var(--yellow);
+      text-transform:uppercase;
+      letter-spacing:2px;
+      font-size:12px;
+      font-weight:800;
+      margin-bottom:28px;
+    }
+
+    h1{
+      max-width:850px;
+      font-size:clamp(45px,7vw,82px);
+      line-height:1;
+      letter-spacing:-4px;
+      margin-bottom:30px;
+    }
+
+    h1 span{
+      color:var(--yellow);
+    }
+
+    .hero-description{
+      max-width:730px;
+      color:#d7d7dc;
+      font-size:19px;
+    }
+
+    .hero-rule{
+      margin-top:45px;
+      width:110px;
+      height:7px;
+      background:var(--yellow);
+    }
+
+    /* FLOATING BAR */
+    .floating-bar{
+      width:min(970px,calc(100% - 40px));
+      margin:-54px auto 0;
+      position:relative;
+      z-index:5;
+      background:white;
+      box-shadow:var(--shadow);
+      border-radius:8px;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+    }
+
+    .bar-item{
+      padding:27px 30px;
+      border-right:1px solid var(--border);
+    }
+
+    .bar-item:last-child{
+      border-right:0;
+    }
+
+    .bar-item strong{
+      display:block;
+      color:var(--purple);
+      font-size:17px;
+      margin-bottom:4px;
+    }
+
+    .bar-item span{
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* MAIN */
+    .container{
+      width:min(1090px,calc(100% - 40px));
+      margin:auto;
+    }
+
+    .article{
+      padding-top:75px;
+    }
+
+    .opening{
+      max-width:880px;
+      margin:0 auto 75px;
+      text-align:center;
+    }
+
+    .opening p{
+      font-size:19px;
+      color:#565860;
+    }
+
+    .opening p + p{
+      margin-top:17px;
+    }
+
+    /* SECTION */
+    .section{
+      margin-bottom:75px;
+    }
+
+    .section-title{
+      display:flex;
+      align-items:flex-start;
+      gap:20px;
+      margin-bottom:25px;
+    }
+
+    .number{
+      flex:0 0 auto;
+      width:55px;
+      height:55px;
+      background:var(--purple);
+      color:white;
+      display:grid;
+      place-items:center;
+      font-weight:900;
+      border-radius:5px;
+      box-shadow:7px 7px 0 var(--yellow);
+    }
+
+    h2{
+      color:var(--charcoal);
+      font-size:35px;
+      line-height:1.2;
+      letter-spacing:-1px;
+    }
+
+    .section p{
+      color:#53565e;
+      margin-bottom:18px;
+    }
+
+    .section a{
+      color:var(--purple);
+      font-weight:800;
+      text-decoration-thickness:2px;
+      text-underline-offset:4px;
+    }
+
+    /* SPLIT */
+    .split{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:22px;
+      margin-top:32px;
+    }
+
+    .panel{
+      padding:32px;
+      border-radius:6px;
+      min-height:225px;
+    }
+
+    .panel.purple{
+      background:var(--soft);
+    }
+
+    .panel.yellow{
+      background:var(--yellow);
+    }
+
+    .panel.rose{
+      background:var(--rose);
+    }
+
+    .panel.green{
+      background:var(--green);
+    }
+
+    .panel small{
+      display:block;
+      text-transform:uppercase;
+      letter-spacing:1.5px;
+      font-size:11px;
+      font-weight:900;
+      color:#6c6e74;
+      margin-bottom:15px;
+    }
+
+    .panel h3{
+      color:var(--charcoal);
+      font-size:21px;
+      margin-bottom:10px;
+    }
+
+    .panel p{
+      margin:0;
+      font-size:15px;
+    }
+
+    /* QUOTE */
+    .statement{
+      margin:40px 0;
+      padding:42px;
+      background:var(--charcoal);
+      color:white;
+      border-radius:0 35px 0 35px;
+      position:relative;
+    }
+
+    .statement::after{
+      content:"“";
+      position:absolute;
+      right:25px;
+      top:-35px;
+      color:var(--yellow);
+      font-size:120px;
+      line-height:1;
+      font-family:Georgia,serif;
+    }
+
+    .statement p{
+      color:white;
+      font-size:22px;
+      line-height:1.5;
+      font-weight:700;
+      max-width:800px;
+      margin:0;
+    }
+
+    /* ROLE CARDS */
+    .role-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+      margin-top:30px;
+    }
+
+    .role{
+      background:white;
+      border:1px solid var(--border);
+      padding:27px;
+      border-radius:18px 4px 18px 4px;
+      transition:.25s ease;
+    }
+
+    .role:hover{
+      transform:translateY(-5px);
+      box-shadow:var(--shadow);
+    }
+
+    .role-icon{
+      font-size:28px;
+      color:var(--purple);
+      font-weight:900;
+      margin-bottom:15px;
+    }
+
+    .role h3{
+      color:var(--charcoal);
+      font-size:19px;
+      margin-bottom:8px;
+    }
+
+    .role p{
+      font-size:14px;
+      color:var(--muted);
+      margin:0;
+    }
+
+    /* COLOUR SYSTEM */
+    .colour-system{
+      margin-top:32px;
+      background:white;
+      border:1px solid var(--border);
+      padding:30px;
+      border-radius:7px;
+      box-shadow:0 10px 35px rgba(32,33,36,.05);
+    }
+
+    .colour-row{
+      display:grid;
+      grid-template-columns:70px 1fr;
+      gap:20px;
+      align-items:center;
+      padding:17px 0;
+      border-bottom:1px solid var(--border);
+    }
+
+    .colour-row:last-child{
+      border-bottom:0;
+    }
+
+    .colour-dot{
+      width:55px;
+      height:35px;
+      border-radius:6px;
+    }
+
+    .dot-one{background:#6b4ce6}
+    .dot-two{background:#f4d35e}
+    .dot-three{background:#50a77b}
+    .dot-four{background:#e66a78}
+
+    .colour-row h3{
+      font-size:17px;
+      color:var(--charcoal);
+      margin-bottom:3px;
+    }
+
+    .colour-row p{
+      margin:0;
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    /* GUIDE */
+    .guide{
+      background:#eee9ff;
+      padding:42px;
+      border-left:8px solid var(--purple);
+      margin-top:30px;
+    }
+
+    .guide h3{
+      color:var(--charcoal);
+      font-size:22px;
+      margin-bottom:18px;
+    }
+
+    .guide ul{
+      list-style:none;
+      display:grid;
+      gap:13px;
+    }
+
+    .guide li{
+      position:relative;
+      padding-left:28px;
+      color:#4d5058;
+      font-size:15px;
+    }
+
+    .guide li::before{
+      content:"→";
+      position:absolute;
+      left:0;
+      color:var(--purple);
+      font-weight:900;
+    }
+
+    /* PROCESS */
+    .timeline{
+      margin-top:32px;
+      border-left:3px solid var(--yellow);
+      padding-left:30px;
+    }
+
+    .timeline-item{
+      position:relative;
+      padding:5px 0 30px;
+    }
+
+    .timeline-item::before{
+      content:"";
+      position:absolute;
+      width:13px;
+      height:13px;
+      border-radius:50%;
+      background:var(--purple);
+      left:-38px;
+      top:10px;
+      border:4px solid var(--cream);
+    }
+
+    .timeline-item h3{
+      color:var(--charcoal);
+      font-size:20px;
+      margin-bottom:7px;
+    }
+
+    .timeline-item p{
+      margin:0;
+      font-size:15px;
+    }
+
+    /* CONCLUSION */
+    .conclusion{
+      margin-bottom:80px;
+      background:var(--purple);
+      color:white;
+      padding:55px;
+      border-radius:40px 4px 40px 4px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .conclusion::before{
+      content:"";
+      position:absolute;
+      width:230px;
+      height:230px;
+      border:35px solid rgba(255,255,255,.13);
+      border-radius:50%;
+      right:-80px;
+      top:-80px;
+    }
+
+    .conclusion h2{
+      color:white;
+      position:relative;
+      z-index:2;
+    }
+
+    .conclusion p{
+      max-width:850px;
+      color:#eeeaff;
+      margin-top:18px;
+      position:relative;
+      z-index:2;
+    }
+
+    footer{
+      background:#17181b;
+      color:#a7a8ae;
+      text-align:center;
+      padding:30px 20px;
+      font-size:13px;
+    }
+
+    footer strong{
+      color:white;
+    }
+
+    @media(max-width:850px){
+      .floating-bar{
+        grid-template-columns:1fr;
+      }
+
+      .bar-item{
+        border-right:0;
+        border-bottom:1px solid var(--border);
+      }
+
+      .bar-item:last-child{
+        border-bottom:0;
+      }
+
+      .role-grid{
+        grid-template-columns:1fr;
+      }
+
+      .split{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media(max-width:600px){
+      .container{
+        width:calc(100% - 28px);
+      }
+
+      .hero{
+        padding:65px 18px 120px;
+      }
+
+      h1{
+        font-size:45px;
+        letter-spacing:-2.5px;
+      }
+
+      .hero-description{
+        font-size:17px;
+      }
+
+      .article{
+        padding-top:65px;
+      }
+
+      .opening p{
+        font-size:17px;
+      }
+
+      .section-title{
+        gap:15px;
+      }
+
+      h2{
+        font-size:28px;
+      }
+
+      .number{
+        width:46px;
+        height:46px;
+        box-shadow:5px 5px 0 var(--yellow);
+      }
+
+      .statement,
+      .conclusion,
+      .guide{
+        padding:30px 23px;
+      }
+
+      .statement p{
+        font-size:19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <header class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-orb"></div>
+
+    <div class="hero-inner">
+      <div class="label">Branded Merchandise / Lanyards</div>
+
+      <h1>
+        GoPromotional: Making
+        <span>Branded Lanyards</span>
+        Work for Your Brand
+      </h1>
+
+      <p class="hero-description">
+        A lanyard can identify a person, organise an event and reinforce a visual identity
+        at the same time. When designed with purpose, it becomes more than a way to hold
+        an access pass — it becomes a practical part of the brand experience.
+      </p>
+
+      <div class="hero-rule"></div>
+    </div>
+  </header>
+
+
+  <div class="floating-bar">
+
+    <div class="bar-item">
+      <strong>Visible</strong>
+      <span>Branding stays naturally in view throughout the day.</span>
+    </div>
+
+    <div class="bar-item">
+      <strong>Functional</strong>
+      <span>Useful for IDs, badges, passes and workplace access.</span>
+    </div>
+
+    <div class="bar-item">
+      <strong>Adaptable</strong>
+      <span>Suitable for events, teams, schools and organisations.</span>
+    </div>
+
+  </div>
+
+
+  <main class="container article">
+
+    <section class="opening">
+      <p>
+        Promotional merchandise is most effective when the product has a genuine role in
+        the recipient's day. Lanyards are a strong example because they combine practical
+        identification with an unusually visible branding area.
+      </p>
+
+      <p>
+        At exhibitions, conferences, workplaces, universities, schools and healthcare
+        environments, lanyards can become part of how people identify themselves and
+        navigate a shared space. That makes them useful not only as accessories but also
+        as tools for creating a more organised and recognisable environment.
+      </p>
+    </section>
+
+
+    <section class="section">
+
+      <div class="section-title">
+        <div class="number">01</div>
+        <h2>Why Lanyards Have Real Branding Potential</h2>
+      </div>
+
+      <p>
+        Unlike many promotional products that sit on a desk or disappear into a bag,
+        lanyards are normally worn where they can be seen. This creates a natural
+        opportunity for a company name, logo, campaign message or visual identity to
+        remain visible while the wearer moves around.
+      </p>
+
+      <p>
+        Their usefulness also gives them a practical purpose beyond advertising. A
+        lanyard can hold an identification card, visitor pass, access badge or event
+        credential. Because the product is connected to something useful, recipients
+        have a clear reason to keep wearing it.
+      </p>
+
+      <div class="statement">
+        <p>
+          The best branded merchandise does not interrupt a person's routine — it becomes
+          part of the routine.
+        </p>
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="section-title">
+        <div class="number">02</div>
+        <h2>Matching the Lanyard to the Setting</h2>
+      </div>
+
+      <p>
+        There is no single lanyard design that suits every organisation. The right choice
+        depends on where it will be used, who will wear it and what the business wants
+        the product to communicate.
+      </p>
+
+      <div class="split">
+
+        <div class="panel purple">
+          <small>Events & Exhibitions</small>
+          <h3>Make identification part of the experience</h3>
+          <p>
+            At conferences and exhibitions, branded lanyards can create a consistent look
+            across delegates, organisers and exhibitors while making credentials easier
+            to carry.
+          </p>
+        </div>
+
+        <div class="panel yellow">
+          <small>Workplaces</small>
+          <h3>Bring consistency to staff identity</h3>
+          <p>
+            Office teams can use branded lanyards for identification and access purposes
+            while reinforcing a professional visual identity.
+          </p>
+        </div>
+
+        <div class="panel green">
+          <small>Education</small>
+          <h3>Create a recognisable community</h3>
+          <p>
+            Schools, colleges and universities can use lanyards for staff, students,
+            visitors or event programmes.
+          </p>
+        </div>
+
+        <div class="panel rose">
+          <small>Healthcare & Organisations</small>
+          <h3>Combine function with recognition</h3>
+          <p>
+            Where identification is important, a clearly branded lanyard can contribute
+            to a more organised and professional environment.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="section-title">
+        <div class="number">03</div>
+        <h2>Choosing a Format That Fits the Brand</h2>
+      </div>
+
+      <p>
+        Material and construction influence how a lanyard looks and feels. Polyester,
+        nylon, tubular and full-colour options can create different visual and tactile
+        results, while recycled materials can support organisations looking for more
+        environmentally conscious merchandise choices.
+      </p>
+
+      <p>
+        GoPromotional's current lanyard range includes full-colour lanyards, polyester
+        lanyards, nylon lanyards, tubular lanyards, eco-friendly options and retractable
+        badge reels. The variety makes it possible to approach lanyard selection according
+        to the practical and visual requirements of the campaign.       </p>
+
+      <div class="role-grid">
+
+        <div class="role">
+          <div class="role-icon">01</div>
+          <h3>Full-Colour</h3>
+          <p>
+            A useful option when visual impact and detailed branding are important to
+            the campaign.
+          </p>
+        </div>
+
+        <div class="role">
+          <div class="role-icon">02</div>
+          <h3>Polyester</h3>
+          <p>
+            A versatile format suited to many event, workplace and promotional uses.
+          </p>
+        </div>
+
+        <div class="role">
+          <div class="role-icon">03</div>
+          <h3>Nylon</h3>
+          <p>
+            Offers another material choice when businesses want a particular look and
+            feel for their branded merchandise.
+          </p>
+        </div>
+
+        <div class="role">
+          <div class="role-icon">04</div>
+          <h3>Tubular</h3>
+          <p>
+            Provides a different construction and appearance for organisations seeking
+            an alternative to flat lanyards.
+          </p>
+        </div>
+
+        <div class="role">
+          <div class="role-icon">05</div>
+          <h3>Eco Options</h3>
+          <p>
+            Recycled and other environmentally focused choices can support sustainability
+            considerations within a merchandise programme.
+          </p>
+        </div>
+
+        <div class="role">
+          <div class="role-icon">06</div>
+          <h3>Badge Reels</h3>
+          <p>
+            Retractable badge reels can add practical flexibility where credentials need
+            to be accessed regularly.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="section-title">
+        <div class="number">04</div>
+        <h2>Using Colour as an Organisational Tool</h2>
+      </div>
+
+      <p>
+        Colour can do more than make a lanyard visually attractive. In the right
+        environment, different colours can help people understand roles, groups or
+        access levels at a glance.
+      </p>
+
+      <p>
+        For a large event, for example, organisers could use one colour for staff,
+        another for speakers and another for exhibitors. The exact system will depend
+        on the event's requirements, but the principle is simple: visual differences
+        can make information easier to process.
+      </p>
+
+      <p>
+        This is particularly useful when combined with consistent branding. The lanyard
+        can carry the organisation's visual identity while colour provides an additional
+        layer of practical information.
+      </p>
+
+      <div class="colour-system">
+
+        <div class="colour-row">
+          <div class="colour-dot dot-one"></div>
+          <div>
+            <h3>Event Team</h3>
+            <p>A distinct colour can help attendees quickly recognise people responsible for event support.</p>
+          </div>
+        </div>
+
+        <div class="colour-row">
+          <div class="colour-dot dot-two"></div>
+          <div>
+            <h3>Speakers & Presenters</h3>
+            <p>A separate visual treatment can make important event roles easier to identify.</p>
+          </div>
+        </div>
+
+        <div class="colour-row">
+          <div class="colour-dot dot-three"></div>
+          <div>
+            <h3>Exhibitors</h3>
+            <p>A consistent colour can help distinguish participating businesses or partner groups.</p>
+          </div>
+        </div>
+
+        <div class="colour-row">
+          <div class="colour-dot dot-four"></div>
+          <div>
+            <h3>Special Access</h3>
+            <p>Where appropriate, another colour can identify specific access or operational roles.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="guide">
+
+        <h3>Explore a practical approach to event identification</h3>
+
+        <ul>
+          <li>Keep colour choices easy to distinguish from one another.</li>
+          <li>Use the same colour system consistently throughout the event.</li>
+          <li>Make the main organisation or event branding remain clearly visible.</li>
+          <li>Explain the colour system to staff before the event begins.</li>
+          <li>Consider accessibility when selecting contrasting colours.</li>
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="section-title">
+        <div class="number">05</div>
+        <h2>Designing a Lanyard People Are Happy to Wear</h2>
+      </div>
+
+      <p>
+        Good lanyard design needs to balance branding with comfort and visual clarity.
+        A design can be bold without becoming cluttered. The organisation's logo should
+        remain recognisable, while supporting text should be kept simple enough to work
+        at the scale of the product.
+      </p>
+
+      <p>
+        Repetition can be useful because the lanyard wraps around the wearer and may be
+        viewed from different directions. Repeating a logo or visual motif can create
+        consistent recognition rather than relying on one isolated branding area.
+      </p>
+
+      <p>
+        Colour selection should also be intentional. Strong contrast can improve
+        readability, while colours connected to the wider brand identity can make the
+        lanyard feel like a genuine part of the organisation rather than a generic
+        promotional accessory.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="section-title">
+        <div class="number">06</div>
+        <h2>Branded Lanyards as Part of an Event System</h2>
+      </div>
+
+      <p>
+        A successful event usually involves many small details working together. Name
+        badges, signage, exhibition stands, staff clothing and promotional products all
+        contribute to the environment attendees experience.
+      </p>
+
+      <p>
+        Lanyards can connect several of these elements. Matching the lanyard with event
+        colours, badge layouts and other printed materials creates visual continuity.
+        That consistency can make an event feel more professional and easier to navigate.
+      </p>
+
+      <p>
+        The lanyard can also become a subtle reminder of the event after it has finished.
+        If attendees continue using it at work or other events, the branding can remain
+        visible beyond the original occasion.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="section-title">
+        <div class="number">07</div>
+        <h2>How to Plan a Better Lanyard Order</h2>
+      </div>
+
+      <p>
+        Good results usually come from making the important decisions before artwork is
+        finalised. The process does not need to be complicated, but it should consider
+        both the practical requirements and the intended brand impression.
+      </p>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <h3>Define the users</h3>
+          <p>
+            Identify whether the lanyards are intended for delegates, employees,
+            students, visitors, exhibitors, organisers or several groups.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Decide the function</h3>
+          <p>
+            Determine whether the lanyard will primarily carry an ID card, event pass,
+            access credential or another attachment.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Select the format</h3>
+          <p>
+            Compare material, width, finish and additional features according to the
+            setting and intended use.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Build the artwork</h3>
+          <p>
+            Keep logos, colours and text clear while ensuring the design works across
+            the available branding area.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Plan distribution</h3>
+          <p>
+            Make sure the quantity and role-based allocation match the number of people
+            who will actually need the lanyards.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="section-title">
+        <div class="number">08</div>
+        <h2>Where Branded Lanyards Can Add Value</h2>
+      </div>
+
+      <p>
+        Lanyards are particularly versatile because they can serve both promotional and
+        operational purposes. They can be used during trade shows, exhibitions, freshers'
+        week, staff rollouts and professional workplace environments.
+      </p>
+
+      <p>
+        Their usefulness can also make them suitable for organisations that want branding
+        to feel integrated rather than overly promotional. Instead of handing someone an
+        item with no clear purpose, a business can provide something directly connected
+        to participation, identification or access.
+      </p>
+
+      <p>
+        This combination of utility and visibility is what makes lanyards particularly
+        interesting within a wider promotional merchandise strategy.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="section-title">
+        <div class="number">09</div>
+        <h2>Making the Brand Feel Consistent</h2>
+      </div>
+
+      <p>
+        A lanyard should not exist in isolation from the rest of the brand. When possible,
+        its colours and visual treatment should connect with the organisation's existing
+        identity.
+      </p>
+
+      <p>
+        Consider how the lanyard looks beside a staff uniform, event signage, printed
+        badges, exhibition graphics or digital materials. Consistency across these
+        touchpoints helps create a stronger overall impression because people encounter
+        familiar visual cues in several places.
+      </p>
+
+      <p>
+        The result is not necessarily a louder brand. In many cases, it is a more
+        coherent one — a brand that feels organised because its smallest details support
+        the same visual language.
+      </p>
+
+    </section>
+
+
+    <section class="conclusion">
+
+      <h2>Making the Lanyard Work Harder for the Brand</h2>
+
+      <p>
+        A branded lanyard may be a relatively small item, but its role can extend well
+        beyond holding an ID badge. It can help people identify teams, create visual
+        consistency, support event organisation and keep a company's identity visible
+        throughout the day.
+      </p>
+
+      <p>
+        The key is to start with purpose. Choose the format according to the setting,
+        design the branding for clarity, use colour intelligently and make sure the
+        final product feels appropriate for the people wearing it. With that approach,
+        a lanyard becomes a useful part of the brand experience rather than simply
+        another promotional giveaway.
+      </p>
+
+      <p>
+        GoPromotional's broad range of lanyard formats provides businesses with different
+        ways to approach these requirements, from full-colour designs and traditional
+        polyester options to nylon, tubular and eco-focused alternatives.       </p>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <strong>Branded Lanyard Strategy</strong> — Practical ideas for stronger event,
+    workplace and promotional branding.
+  </footer>
+
+</div>
+
+</body>
+</html>
